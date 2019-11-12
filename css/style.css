@@ -1,0 +1,402 @@
+html {
+    font-size: 1em;
+    position: relative;
+    min-height: 100%; 
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', monospace;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    margin-bottom: 30px; 
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+/*this is a group selection, selecting all the headlines h1-h4*/
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 1.414em 0 0.5em 0;
+    font-family: 'Roboto', monospace; 
+    font-weight: 7000; 
+    color: black; 
+    margin: 0 0 0.5em 0;
+    font-size: 1.777em;
+}
+
+h2 {
+    font-family: 'Roboto', monospace; 
+    font-weight: 100; 
+    color: #525252; 
+    margin: 1.414em 0 0.5em 0;
+    font-size: 1.777em;
+    text-align: center; 
+}
+
+h3 {
+    font-family: 'Roboto', monospace; 
+    font-weight: 100; 
+    color: #CC285C; 
+    margin: 1em 0 0.5em 0;
+    font-size: 1.777em;
+}
+
+h4 {
+    font-family: 'Roboto', monospace; 
+    font-weight: 500;
+    color: #CC285C;
+    font-size: 1em;
+}
+
+h5 {
+    margin: 1.414em 0 0.5em 0;
+    font-family: 'Roboto', monospace; 
+    font-weight: 2000; 
+    color: #EC9FB8; 
+    margin: 0 0 0.5em 0;
+    font-size: 1.777em;
+}
+
+h6 {
+    font-family: 'Roboto', monospace; 
+    font-weight: 500; 
+    color: white; 
+    font-size: 1em;
+}
+
+small,
+.font_small {
+    font-size: 0.75em;
+}
+
+/* link*/
+a {
+    color: #CC285C;
+}
+
+a2 {
+    color: white; 
+}
+
+a:hover {
+    color: #B2B1AE;
+    text-decoration: none;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;/*Your code here - position relative to the parent */;
+  top: -40px;     /*Your code here - place 40px higher */;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  color: black !important;
+}
+
+.skip a:focus{
+/*Add the selector and rule to move the skip link to the exact top.*/
+  position: absolute;
+  top: 0px;
+  transition: auto;
+}
+
+:focus{
+/*Add the selector and code to put a 2px black border around all elements in focus.*/
+  border: 2px solid black;
+}
+
+/*button style*/
+/*solid button style*/
+.btn {
+    font-size: 1rem;
+    letter-spacing: .1em;
+    line-height: 2em;
+    border-radius: 3em;
+     /*    the size of button*/
+    padding: .5em 1em;
+    color: black;
+    background: #EC9FB8;
+    border: none;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+
+/*outline button style*/
+.btn-primary-outline {
+    color: #EC9FB8;
+    background-color: transparent;
+    border: 1px #EC9FB8 solid;
+    transition: all 0.5s;
+}
+
+.btn-primary-outline:hover {
+    color: white;
+    background-color: #EC9FB8;
+    border-color: #EC9FB8;
+}
+
+.view { 
+    background: url(../img/pink_rectangle.png) center center  no-repeat; 
+    background-size:cover;
+    padding: 5em 1em;
+    text-align: center;
+}
+ 
+.space {
+    margin-top: 20px;
+}
+
+.enter {
+    margin-bottom: 20px;
+}
+
+#about {
+    padding: 2em 0;
+}
+
+/*Contact*/
+#contact {
+    padding: 2em 0; 
+}
+
+form {
+    margin-bottom: 100px; 
+}
+
+input {
+    width: 70%;
+    position: absolute; 
+    left: 150px; 
+}
+
+textarea {
+    width: 70%;
+    position: absolute;
+    left: 150px;
+}
+
+textarea:focus {
+    background-color: lightgrey; 
+}
+
+input:focus {
+    background-color: lightgrey;
+}
+
+fieldset {
+    width: 50%;
+}
+
+input[type=submit] {
+    margin-top:25px;
+    padding:5px 15px; 
+    background:#4a89c3; 
+    border:2px solid lightgrey;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    color:white;
+}
+
+#portfolio {
+    padding: 2em 0; 
+}
+
+/*Portfolio thumbnails*/
+.portfolio-link img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transition: all .3s ease-out;
+    height: 150px;
+    width: 200px; 
+    margin-bottom: 10px;
+}
+
+.portfolio-link img:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+/*portfolio modal*/
+.portfolio-modal .modal-body {
+    position: static;
+}
+
+/*modal box size*/
+.portfolio-modal .modal-dialog {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*content*/
+.portfolio-modal .modal-content {
+    color: #746f6f;
+    padding: 0 0 2em 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/*project title*/
+.portfolio-modal .modal-content h3 {
+    color: blue;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+
+/*bottom of the modal box including prev, next, back to work links*/
+.portfolio-modal .bottom {
+    padding: 0em 2em 1em 2em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/*the X close icon*/
+.portfolio-modal .modal-header .close {
+    font-size: 4em;
+    padding: 0 1em 0 0;
+    font-weight: 200;
+    color: red;
+}
+
+.portfolio-modal .modal-header {
+    border-bottom: none;
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+footer{
+  position: absolute;
+  bottom: 0; 
+  width: 100%;
+  line-height: 30px; 
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.carousel-control-prev {
+    color: transparent !important;
+}
+
+.carousel-control-next {
+    color: transparent !important;
+}
+
+.social {
+    font-size: 1.2em;
+    color: white;
+    text-decoration-color: white !important; 
+}
+
+.info {
+    margin-top: 3em;
+}
+
+/*navigation*/
+.navbackground {
+    background-color: white;
+}
+
+.navbar-light .navbar-toggler {
+    color: #EC9FB8;
+    border: none; 
+}
+
+.navbar-light .navbar-brand {
+    font-family: 'Roboto', monospace;
+    color: black;
+    padding-top: 0;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #CC285C;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Roboto', monospace;
+    color: black;
+    font-size: 1.1em;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #CC285C;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #CC285C;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #CC285C;
+}
+
+/* The active link, when scroll to the section, the menu items will turn to different color */
+.navbar-light a.active {
+    color: #CC285C !important;
+}
+
+.nav-item .social {
+    font-size: 1.7em; 
+    display: inline-block;
+    color: black;
+}
+
+/* Media Queries */
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: none; /* Your code here - set to default setting */
+    transition: none; /* Your code here - set to default setting */
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top: 0px;
+  }
+}
